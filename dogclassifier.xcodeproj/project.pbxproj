@@ -69,7 +69,7 @@
 		8400421124C0D92D00850686 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
 		8400421624C0DA3100850686 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
 		8400421B24C0DA7100850686 /* Classifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Classifer.swift; path = tflite/Classifer.swift; sourceTree = "<group>"; };
-		84DF40CC24C0A6D5007C02CC /* Dog Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DF40CC24C0A6D5007C02CC /* Doggie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doggie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DF40CF24C0A6D5007C02CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DF40D124C0A6D5007C02CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84DF40D624C0A6D5007C02CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		84DF40CD24C0A6D5007C02CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84DF40CC24C0A6D5007C02CC /* Dog Detector.app */,
+				84DF40CC24C0A6D5007C02CC /* Doggie.app */,
 				84DF40E524C0A6D8007C02CC /* dogclassifierTests.xctest */,
 				84DF40F024C0A6D8007C02CC /* dogclassifierUITests.xctest */,
 			);
@@ -279,7 +279,7 @@
 			);
 			name = dogclassifier;
 			productName = dogclassifier;
-			productReference = 84DF40CC24C0A6D5007C02CC /* Dog Detector.app */;
+			productReference = 84DF40CC24C0A6D5007C02CC /* Doggie.app */;
 			productType = "com.apple.product-type.application";
 		};
 		84DF40E424C0A6D8007C02CC /* dogclassifierTests */ = {
@@ -672,7 +672,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.riis.dogclassifierios;
-				PRODUCT_NAME = "Dog Detector";
+				PRODUCT_NAME = Doggie;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -693,7 +693,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.riis.dogclassifierios;
-				PRODUCT_NAME = "Dog Detector";
+				PRODUCT_NAME = Doggie;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
