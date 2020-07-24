@@ -1,6 +1,6 @@
 import UIKit
 
-class ImageListController:UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class ImageListController:UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -60,5 +60,25 @@ class ImageListController:UIViewController, UICollectionViewDataSource, UICollec
         
         collectionView.reloadData()
     }
+    
+    @IBAction func addImage(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.allowsEditing = false
+        image.delegate = self
+        present(image, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let item = ImageItem(image: pickedImage)
+            items.insert(item, at: 0)
+            //imageView.image = image
+            collectionView.reloadData()
+        }
+     
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     
 }
